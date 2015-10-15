@@ -13,4 +13,8 @@ class LoremController extends Controller {
   public function getIndex() {
     return "Here's where to create your own lorum ipsum";
   }
+
+  public function postIndex() {
+    return "Here's your ipsum for pasting";
+  }
 }

@@ -9,6 +9,13 @@ class UserController extends Controller {
     # Put anything here that should happen before any of the other actions
   }
 
+  public function getIndex() {
+    return "How many users?";
+  }
+
+  public function postIndex() {
+    return "Here's your users";
+  }
 
 }
  ?>

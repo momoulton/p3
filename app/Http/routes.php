@@ -16,18 +16,11 @@ Route::get('/', function () {
 });
 
 Route::get('/lorem-ipsum', 'LoremController@getIndex');
+Route::post('/lorem-ipsum', 'LoremController@postIndex');
 
-Route::post('/lorem-ipsum', function() {
-  echo "Here's your own lorem ipsum ready for pasting";
-});
+Route::get('/users', 'UserController@getIndex');
+Route::post('/users', 'UserController@postIndex');
 
-Route::get('/users', function() {
-  echo "How many users?";
-});
-
-Route::post('/users', function() {
-  echo "Here's your users";
-});
 
 Route::get('/practice', function() {
 
