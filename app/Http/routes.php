@@ -15,9 +15,7 @@ Route::get('/', function () {
     echo "Welcome to Developer's Best Friend";
 });
 
-Route::get('/lorem-ipsum', function() {
-  echo "Here's where to create your own loreum ipsum";
-});
+Route::get('/lorem-ipsum', 'LoremController@getIndex');
 
 Route::post('/lorem-ipsum', function() {
   echo "Here's your own lorem ipsum ready for pasting";
