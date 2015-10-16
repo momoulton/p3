@@ -3,6 +3,7 @@ namespace P3\Http\Controllers;
 
 use P3\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use \Badcow\LoremIpsum\Generator;
 
 class LoremController extends Controller {
 
@@ -18,8 +19,9 @@ class LoremController extends Controller {
     $this->validate($request, [
       'paragraphs' => 'required|numeric|min:1|max:99',
       ]);
-
     $paragraphs = $request->input('paragraphs');
-    return 'Creating loreum with this many grafs: '.$paragraphs;
+    $generator = new Generator();
+    $grafs = $generator->getParagraphs($paragraphs);
+    return implode('<p>', $grafs);
   }
 }
