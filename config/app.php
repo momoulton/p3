@@ -145,6 +145,9 @@ return [
         P3\Providers\EventServiceProvider::class,
         P3\Providers\RouteServiceProvider::class,
 
+        /* Debug Bar */
+        Barryvdh\Debugbar\ServiceProvider::class,
+
     ],
 
     /*
@@ -194,6 +197,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
+        /*Debug Bar*/
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
 ];

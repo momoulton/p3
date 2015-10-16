@@ -24,6 +24,10 @@ Route::post('/users', 'UserController@postIndex');
 
 Route::get('/practice', function() {
 
-    echo 'Hello World!';
+  $random = new Rych\Random\Random();
+  $randomNumber = $random->getRandomInteger(1,10);
+  $generator = new Badcow\LoremIpsum\Generator();
+  $paragraphs = $generator->getParagraphs($randomNumber);
+  return implode('<p>', $paragraphs);
 
 });

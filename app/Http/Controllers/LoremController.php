@@ -11,10 +11,15 @@ class LoremController extends Controller {
   }
 
   public function getIndex() {
-    return "Here's where to create your own lorum ipsum";
+    return view('lorem.index');
   }
 
-  public function postIndex() {
-    return "Here's your ipsum for pasting";
+  public function postIndex(Request $request) {
+    $this->validate($request, [
+      'paragraphs' => 'required|numeric|min:1|max:99',
+      ]);
+
+    $paragraphs = $request->input('paragraphs');
+    return 'Creating loreum with this many grafs: '.$paragraphs;
   }
 }
