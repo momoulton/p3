@@ -38,7 +38,7 @@ class UserController extends Controller {
         $month = $months[$monthNumber];
         if ($monthNumber+1 == 2)
         {
-          $day = $randomBirth->getRandomInteger(1,29);
+          $day = $randomBirth->getRandomInteger(1,28);
         }
         elseif ($monthNumber+1 == 9 || $monthNumber+1 == 4 || $monthNumber+1 == 6 || $monthNumber+1 == 11)
         {
