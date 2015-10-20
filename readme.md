@@ -7,7 +7,7 @@
 Two tools. The first allows users to generate up to 99 paragraphs of randomly-generated Lorem Ipsum text. The second allows users to generate up to 99 random users with (optionally) birthdays. The users are drawn from characters in famous works of literature, while the birthdays range from 1750 to the present (without accounting for leap years, though).
 
 ## Demo
-http://screencast.com/t/U65immIMpmoB
+http://screencast.com/t/2tzjhr2QL
 
 ## Details for teaching team
 None.
