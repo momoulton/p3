@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    echo "Welcome to Developer's Best Friend";
-});
+Route::get('/', 'MainController@getIndex');
 
 Route::get('/lorem-ipsum', 'LoremController@getIndex');
 Route::post('/lorem-ipsum', 'LoremController@postIndex');

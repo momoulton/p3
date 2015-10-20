@@ -25,6 +25,7 @@
     </section>
 
     <footer>
+        <p><a href="/">Home</a></p>
         &copy; {{ date('Y') }}
     </footer>
 

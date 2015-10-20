@@ -22,7 +22,6 @@ class LoremController extends Controller {
     $paragraphs = $request->input('paragraphs');
     $generator = new Generator();
     $grafs = $generator->getParagraphs($paragraphs);
-    $lorem = implode('<p>', $grafs);
     return view('lorem.index')->with('grafs', $grafs);
   }
 }
